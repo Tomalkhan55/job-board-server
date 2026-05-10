@@ -8,7 +8,6 @@ import jobRoutes from "./routes/jobs.js";
 dotenv.config();
 
 const app = express();
-
 app.use(cors({
   origin: (origin, callback) => {
     const allowed = (process.env.CLIENT_URL || "").replace(/\/$/, "");
